@@ -1,0 +1,26 @@
+{
+  "name": "animalworld",
+  "version": "0.0.1",
+  "description": "Child app",
+  "main": "Gruntfile.js",
+  "moduleType": [
+    "amd"
+  ],
+  "authors": [
+    "DasPeTe"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "1.11.2",
+    "backbone": "~1.1.2",
+    "gsap": "~1.16.1",
+    "requirejs": "~2.1.17"
+  }
+}
