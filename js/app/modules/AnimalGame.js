@@ -29,6 +29,9 @@ define([
                 this.initDOM();
                 this.initButtons();
                 this.initAnimals();
+
+                $(window).on('resize', this.onResize);
+                $(window).resize();
             },
 
             initAnimals: function(){
@@ -42,20 +45,20 @@ define([
             },
 
             initButtons: function(){
+                this.DOM.$animalButtons.on('click', this.onAnimalButtonClick);
+            },
+
+            onResize: function(){
                 _.each(this.DOM.$animalButtons, function(button){
                     var $button = $(button);
                     var width = $button.width();
                     var headWidth = $button.find('.animal-element').find('.head').width();
 
-                    log(width / headWidth);
-
                     TweenMax.set($button.find('.animal-element'), {
                         transformOrigin: '0 0',
                         scale: width / headWidth / 3
                     });
-                   
                 });
-                this.DOM.$animalButtons.on('click', this.onAnimalButtonClick);
             },
 
             onAnimalButtonClick: function(e){
