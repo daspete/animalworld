@@ -43,8 +43,6 @@ html {
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                overflow: hidden;
-                
             }
 
             &[data-animal="dog"] {
@@ -53,8 +51,8 @@ html {
 
                 .head {
                     position: absolute;
-                    top: 0;
-                    left: 0;
+                    top: 220px;
+                    left: 210px;
                     width: image-width('dog/head.png');
                     height: image-height('dog/head.png');
                     background-image: image-url('dog/head.png');
@@ -62,8 +60,8 @@ html {
 
                 .body {
                     position: absolute;
-                    top: 0;
-                    left: 0;
+                    top: 358px;
+                    left: 492px;
                     width: image-width('dog/body.png');
                     height: image-height('dog/body.png');
                     background-image: image-url('dog/body.png');
@@ -71,8 +69,8 @@ html {
 
                 .tail {
                     position: absolute;
-                    top: 0;
-                    left: 0;
+                    top: 260px;
+                    left: 1320px;
                     width: image-width('dog/tail.png');
                     height: image-height('dog/tail.png');
                     background-image: image-url('dog/tail.png');
