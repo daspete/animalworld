@@ -67,8 +67,95 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 8, ../sass/screen.scss */
+/* line 9, ../sass/screen.scss */
 html, body {
   width: 100%;
   height: 100%;
+}
+
+/* line 14, ../sass/screen.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 17, ../sass/screen.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 21, ../sass/screen.scss */
+.app {
+  width: 100%;
+  height: 100%;
+}
+/* line 25, ../sass/screen.scss */
+.app .animals {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* line 32, ../sass/screen.scss */
+.app .animals .animal {
+  display: inline-block;
+  position: relative;
+  margin: 0.5em;
+  width: 25%;
+  -webkit-flex: 1 1 23%;
+  flex: 1 1 23%;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25), 0 0 5px rgba(0, 0, 0, 0.4) inset;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25), 0 0 5px rgba(0, 0, 0, 0.4) inset;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25), 0 0 5px rgba(0, 0, 0, 0.4) inset;
+  background-color: #dadcdf;
+}
+/* line 42, ../sass/screen.scss */
+.app .animals .animal .animal-element {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 51, ../sass/screen.scss */
+.app .animals .animal[data-animal="dog"] {
+  background-color: #f00;
+}
+/* line 55, ../sass/screen.scss */
+.app .animals .animal[data-animal="dog"] .head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/dog/head.png?1428821790');
+  background-size: cover;
+}
+/* line 65, ../sass/screen.scss */
+.app .animals .animal[data-animal="dog"] .body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/dog/body.png?1428823036');
+  background-size: cover;
+}
+/* line 75, ../sass/screen.scss */
+.app .animals .animal[data-animal="dog"] .tail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/dog/tail.png?1428823012');
+  background-size: cover;
+}
+/* line 86, ../sass/screen.scss */
+.app .animals .animal[data-animal="cat"] {
+  background-color: #0f0;
 }
