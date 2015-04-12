@@ -27,7 +27,7 @@ define([
         
         render: function(){
             document.addEventListener('deviceready', this.onDeviceReady, false);
-            this.onDeviceReady();
+            //this.onDeviceReady();
             
             this.initRouter();
         },

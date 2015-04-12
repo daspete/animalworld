@@ -52,6 +52,7 @@ define([
             },
 
             playAudio: function(currentAnimal){
+                alert(currentAnimal);
                 if(this.audio !== null){
                     this.audio.pause();
                 }
