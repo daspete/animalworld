@@ -72,8 +72,8 @@ define([
                 if(this.audio !== null){
                     this.audio.pause();
                 }
-                /*this.audio = new Media('/android_asset/www/assets/audio/animals/' + currentAnimal + '.mp3');
-                this.audio.play();*/
+                this.audio = new Media('/android_asset/www/assets/audio/animals/' + currentAnimal + '.mp3');
+                this.audio.play();
             },
 
             animateAnimal: function(animal){
