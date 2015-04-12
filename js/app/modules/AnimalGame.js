@@ -28,6 +28,11 @@ define([
             setup: function(){
                 this.initDOM();
                 this.initButtons();
+                this.initAnimals();
+            },
+
+            initAnimals: function(){
+
             },
 
             initDOM: function(){
@@ -50,9 +55,7 @@ define([
                 if(this.audio !== null){
                     this.audio.pause();
                 }
-                this.audio = new Audio();
-                this.audio.src = 'assets/audio/animals/' + currentAnimal + '.mp3';
-                this.audio.load();
+                this.audio = new Media('assets/audio/animals/' + currentAnimal + '.mp3');
                 this.audio.play();
             }
 
