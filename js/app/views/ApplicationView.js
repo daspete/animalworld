@@ -1,17 +1,21 @@
 define([
     'backbone',
     'router/ApplicationRouter',
-    'views/abstract/AbstractView'
+    'views/abstract/AbstractView',
+    'modules/AnimalGame'
 ], function(
     Backbone,
     ApplicationRouter,
-    AbstractView
+    AbstractView,
+    AnimalGame
 ){
     var ApplicationView=AbstractView.extend({
 
         el: '.app',
 
         router: null,
+
+        animal_game: null,
 
         initialize: function(){
             this.cid='application_view';
@@ -22,11 +26,18 @@ define([
         },
         
         render: function(){
-            document.addEventListener('deviceready', function(){
-                alert('juhu');
-            }, false);
+            document.addEventListener('deviceready', this.onDeviceReady, false);
+            this.onDeviceReady();
+            
             this.initRouter();
         },
+
+        onDeviceReady: function(){
+            this.animal_game = new AnimalGame({
+                container: this.el
+            });
+        },
+
 
         setURL: function(url){
             Backbone.history.navigate('#'+url);
