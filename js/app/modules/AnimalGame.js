@@ -56,7 +56,7 @@ define([
                 if(this.audio !== null){
                     this.audio.pause();
                 }
-                this.audio = new Media('assets/audio/animals/' + currentAnimal + '.mp3');
+                this.audio = new Media('/android_asset/www/assets/audio/animals/' + currentAnimal + '.mp3');
                 this.audio.play();
             }
 
