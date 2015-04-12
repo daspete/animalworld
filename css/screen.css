@@ -100,7 +100,7 @@ html {
   position: relative;
   margin: 5px;
   width: 23%;
-  height: 33%;
+  height: 31%;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
@@ -125,32 +125,29 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../assets/images/dog/head.png?1428821790');
-  background-size: cover;
+  width: 652px;
+  height: 424px;
+  background-image: url('../assets/images/dog/head.png?1428861449');
 }
-/* line 63, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .app .animals .animal[data-animal="dog"] .body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../assets/images/dog/body.png?1428823036');
-  background-size: cover;
+  width: 227px;
+  height: 165px;
+  background-image: url('../assets/images/dog/body.png?1428861782');
 }
-/* line 73, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .app .animals .animal[data-animal="dog"] .tail {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../assets/images/dog/tail.png?1428823012');
-  background-size: cover;
+  width: 14px;
+  height: 17px;
+  background-image: url('../assets/images/dog/tail.png?1428861931');
 }
-/* line 84, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .app .animals .animal[data-animal="cat"] {
   background-color: #0f0;
 }

@@ -15,6 +15,8 @@ define([
 
             DOM: {},
 
+            audio: null,
+
             init: function(settings, defaults){
                 _.bindAll.apply(_, [this].concat(_.functions(this)));
                 
@@ -39,7 +41,19 @@ define([
             },
 
             onAnimalButtonClick: function(e){
-                alert('click');
+                var currentAnimal = $(e.currentTarget).data('animal');
+
+                this.playAudio(currentAnimal);
+            },
+
+            playAudio: function(currentAnimal){
+                if(this.audio !== null){
+                    this.audio.pause();
+                }
+                this.audio = new Audio();
+                this.audio.src = 'assets/audio/animals/' + currentAnimal + '.mp3';
+                this.audio.load();
+                this.audio.play();
             }
 
         };
