@@ -22,6 +22,9 @@ define([
         },
         
         render: function(){
+            document.addEventListener('deviceready', function(){
+                alert('juhu');
+            }, false);
             this.initRouter();
         },
 
